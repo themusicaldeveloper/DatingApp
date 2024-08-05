@@ -1,0 +1,19 @@
+<h1>{{title}}</h1>
+<ul>
+
+  <li *ngFor="let user of users">
+    {{user.id}} - {{user.userName}}
+  </li>  
+
+</ul>
+
+
+<hr>
+
+<ul>
+  @for (item of users; track item.name) {
+    <li>{{ item.userName }}</li>
+    } @empty {
+    <li>There are no items.</li>
+    }
+</ul>
